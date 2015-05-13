@@ -14,11 +14,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        println("viewWillAppear")
         let formatter = NSDateFormatter()
         formatter.timeStyle = .ShortStyle
         timeLabel.text = formatter.stringFromDate(clock.currentTime)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
