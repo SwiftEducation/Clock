@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         timeLabel.text = formatter.stringFromDate(clock.currentTime)
     }
     
+    override func supportedInterfaceOrientations() -> Int {
+        return Int(UIInterfaceOrientationMask.All.rawValue)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
