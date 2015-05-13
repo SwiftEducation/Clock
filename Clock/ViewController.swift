@@ -11,13 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     let clock = Clock()
+    var timer: NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "updateTimeLabel",
-            name: UIApplicationWillEnterForegroundNotification,
-            object: nil)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTimeLabel", userInfo: nil, repeats: true)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -27,7 +25,7 @@ class ViewController: UIViewController {
     
     func updateTimeLabel() {
         let formatter = NSDateFormatter()
-        formatter.timeStyle = .ShortStyle
+        formatter.timeStyle = .MediumStyle
         timeLabel.text = formatter.stringFromDate(clock.currentTime)
     }
     
@@ -37,7 +35,9 @@ class ViewController: UIViewController {
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        if let timer = self.timer {
+            timer.invalidate()
+        }
     }
 
 }
