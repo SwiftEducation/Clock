@@ -13,6 +13,7 @@
 		F9EFB8841B02B6AF0052A285 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EFB8831B02B6AF0052A285 /* Images.xcassets */; };
 		F9EFB8871B02B6AF0052A285 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9EFB8851B02B6AF0052A285 /* LaunchScreen.xib */; };
 		F9EFB8931B02B6AF0052A285 /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EFB8921B02B6AF0052A285 /* ClockTests.swift */; };
+		F9EFB89D1B02DC310052A285 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EFB89C1B02DC310052A285 /* Clock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F9EFB88C1B02B6AF0052A285 /* ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EFB8911B02B6AF0052A285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9EFB8921B02B6AF0052A285 /* ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTests.swift; sourceTree = "<group>"; };
+		F9EFB89C1B02DC310052A285 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F9EFB87C1B02B6AF0052A285 /* AppDelegate.swift */,
 				F9EFB87E1B02B6AF0052A285 /* ViewController.swift */,
 				F9EFB8801B02B6AF0052A285 /* Main.storyboard */,
+				F9EFB89C1B02DC310052A285 /* Clock.swift */,
 				F9EFB8831B02B6AF0052A285 /* Images.xcassets */,
 				F9EFB8851B02B6AF0052A285 /* LaunchScreen.xib */,
 				F9EFB87A1B02B6AF0052A285 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EFB89D1B02DC310052A285 /* Clock.swift in Sources */,
 				F9EFB87F1B02B6AF0052A285 /* ViewController.swift in Sources */,
 				F9EFB87D1B02B6AF0052A285 /* AppDelegate.swift in Sources */,
 			);

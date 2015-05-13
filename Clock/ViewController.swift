@@ -10,10 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
-
+    let clock = Clock()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeLabel.text = "Current Time"
+        let formatter = NSDateFormatter()
+        formatter.timeStyle = .ShortStyle
+        timeLabel.text = formatter.stringFromDate(clock.currentTime)
     }
 
     override func didReceiveMemoryWarning() {
