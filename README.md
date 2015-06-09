@@ -1,6 +1,11 @@
+<img align="right" src="https://raw.github.com/SwiftEducation/Clock/master/Clock/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 # Clock
 
+Dive in with everyone's essential iOS app: the clock. Teach students about Interface Builder, UILabels, IBOutlets, models, views, controllers, NSTimer and how to handle device orientation.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # License
 
