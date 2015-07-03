@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.github.com/SwiftEducation/Clock/master/Clock/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
+<img align="right" src="https://github.com/SwiftEducation/Clock/raw/master/Clock/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 # Clock
 
 ### Level 2, Six Lessons
@@ -7,7 +7,7 @@ Dive in with everyone's essential iOS app: the clock. Teach students about Inter
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
