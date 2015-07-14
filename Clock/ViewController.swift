@@ -23,7 +23,12 @@ class ViewController: UIViewController {
         updateTimeLabel()
     }
     
+    // Format the current date and time to show time only and update the label.
     func updateTimeLabel() {
+        // NSDateFormatterStyle.MediumStyle
+        // Specifies a medium style, typically with abbreviated text,
+        // such as “Nov 23, 1937” for Date
+        // or “3:30:32 PM” for Time.
         let formatter = NSDateFormatter()
         formatter.timeStyle = .MediumStyle
         timeLabel.text = formatter.stringFromDate(clock.currentTime)
