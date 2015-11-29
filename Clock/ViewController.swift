@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        println("viewWillAppear")
+        print("viewWillAppear")
         let formatter = NSDateFormatter()
         formatter.timeStyle = .ShortStyle
         timeLabel.text = formatter.stringFromDate(clock.currentTime)
