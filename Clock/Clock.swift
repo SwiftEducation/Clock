@@ -9,8 +9,8 @@ import Foundation
 
 class Clock {
     
-    var currentTime: NSDate {
-        return NSDate()
+    var currentTime: Date {
+        return Date()
     }
     
 }

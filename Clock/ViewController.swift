@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let formatter = NSDateFormatter()
-        formatter.timeStyle = .ShortStyle
-        timeLabel.text = formatter.stringFromDate(clock.currentTime)
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        timeLabel.text = formatter.string(from: clock.currentTime as Date)
     }
 
     override func didReceiveMemoryWarning() {
