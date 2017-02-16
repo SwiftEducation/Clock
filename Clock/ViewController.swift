@@ -14,21 +14,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "updateTimeLabel",
-            name: UIApplicationWillEnterForegroundNotification,
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(ViewController.updateTimeLabel),
+            name: NSNotification.Name.UIApplicationWillEnterForeground,
             object: nil)
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateTimeLabel()
     }
     
     func updateTimeLabel() {
-        let formatter = NSDateFormatter()
-        formatter.timeStyle = .ShortStyle
-        timeLabel.text = formatter.stringFromDate(clock.currentTime)
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        timeLabel.text = formatter.string(from: clock.currentTime as Date)
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
 
 }
