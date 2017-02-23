@@ -11,22 +11,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     let clock = Clock()
-    var timer: NSTimer?
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTimeLabel", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.updateTimeLabel), userInfo: nil, repeats: true)
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateTimeLabel()
     }
     
     func updateTimeLabel() {
-        let formatter = NSDateFormatter()
-        formatter.timeStyle = .MediumStyle
-        timeLabel.text = formatter.stringFromDate(clock.currentTime)
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        timeLabel.text = formatter.string(from: clock.currentTime as Date)
     }
     
     override func didReceiveMemoryWarning() {
