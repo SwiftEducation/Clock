@@ -1,4 +1,9 @@
 <img align="right" src="https://github.com/SwiftEducation/Clock/raw/master/Clock/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
+
+## Deprecation Warning
+
+The Swift Education materials are out of date, and are no longer maintained.
+
 # Clock
 
 ### Level 2, Six Lessons
